@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: wordpress
+upstream:
+  type: git
+  git:
+    commit: bf6875cf05bee6cc6353bb8b753a918df25aad9f
+    repo: git@github.com:phanimarupaka/wordpress-in-a-box
+    directory: /wordpress
+    ref: master
